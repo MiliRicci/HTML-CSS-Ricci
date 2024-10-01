@@ -1,0 +1,43 @@
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Estilos del titular de la tabla */
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los encabezados de la tabla */
+th {
+    width: 170px;
+    background-color: #f2f2f2;
+    padding: 8px 4px;
+    text-align: left;
+}
+
+/* Estilos generales de las celdas del cuerpo */
+td {
+    background-color: white;
+    color: blue;
+    font-family: Arial, sans-serif;
+    padding: 8px 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para las celdas destacadas */
+.destacar {
+    background-color: red;
+    color: white;
+}
+
+/* Estilos del pie de la tabla */
+tfoot td {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
