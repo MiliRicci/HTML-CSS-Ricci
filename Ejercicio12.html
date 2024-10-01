@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Secciones y Navegación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Barra de navegación fija */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #66cc66; /* Verde claro */
+            padding: 15px;
+            display: flex; /* Añadir flexbox para alinear elementos */
+            justify-content: space-between; /* Distribuir espacio entre los elementos */
+            align-items: center;
+            z-index: 1000;
+        }
+        nav .navbar-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px; /* Margen izquierdo para la alineación */
+        }
+        nav .nav-links {
+            text-align: center;
+            flex-grow: 1;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de las secciones */
+        section {
+            width: 100%;
+            height: 100vh; /* Altura de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            color: #ffffff; /* Texto blanco */
+            position: relative;
+        }
+
+        /* Sección 1 */
+        #seccion1 {
+            background-color: #99e699; /* Verde claro */
+        }
+
+        /* Sección 2 */
+        #seccion2 {
+            background-color: #80d480; /* Verde ligeramente más oscuro */
+        }
+
+        /* Sección 3 (Pie de página) */
+        #seccion3 {
+            background-color: #4caf50; /* Verde más oscuro */
+            height: 50vh; /* Altura menor para el pie de página */
+        }
+
+        /* Añadimos un margen superior para evitar que las secciones se oculten tras la barra de navegación */
+        .spacer {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación fija -->
+    <nav>
+        <div class="navbar-title">NAVBAR</div>
+        <div class="nav-links">
+            <a href="#seccion1">Sección 1</a>
+            <a href="#seccion2">Sección 2</a>
+            <a href="#seccion3">Pie de Página</a>
+        </div>
+    </nav>
+
+    <!-- Primera Sección -->
+    <section id="seccion1" class="spacer">
+        Sección 1
+    </section>
+
+    <!-- Segunda Sección -->
+    <section id="seccion2">
+        Sección 2
+    </section>
+
+    <!-- Pie de Página (Sección 3) -->
+    <section id="seccion3">
+        Pie de Página
+    </section>
+
+</body>
+</html>
