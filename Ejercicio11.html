@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <style>
+        body {
+            background-color: #f4e1ff; 
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #4b0082; 
+        }
+        form {
+            background-color: #e6ccff; /* Fondo del formulario */
+            padding: 30px; /* Ajuste del padding */
+            max-width: 500px; /* ancho máximo */
+            margin: 20px auto; /* Espaciado del formulario y centrado */
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        label {
+            flex: 1;
+            margin-right: 10px;
+            color: #4b0082;
+        }
+        input[type="text"], input[type="email"] {
+            width: 500px; /* Tamaño de los cuadros de texto */
+            padding: 8px; /* Espaciado */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-label {
+            margin-bottom: 20px;
+            display: block;
+        }
+        button {
+            background-color: #4b0082; /* Botón de color violeta oscuro */
+            color: white;
+            padding: 12px 20px; /* tamaño del botón */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3d006f; /* Efecto hover para el botón */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de contacto</h1>
+
+    <form action="" method="GET">
+        <!-- Campo de Nombre -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="40" required>
+        </div>
+
+        <!-- Campo de Apellidos -->
+        <div class="form-group">
+            <label for="apellidos">Apellido:</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+        </div>
+
+        <!-- Campo de Sexo -->
+        <div class="form-group">
+            <label>Sexo:</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre" required>
+            <label for="hombre" style="display:inline;">Hombre</label>
+
+            <input type="radio" id="mujer" name="sexo" value="mujer" required>
+            <label for="mujer" style="display:inline;">Mujer</label>
+        </div>
+
+        <!-- Campo de Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Casilla de verificación: Deseo recibir novedades -->
+        <div class="checkbox-label">
+            <input type="checkbox" id="novedades" name="novedades" checked>
+            <label for="novedades" style="display:inline;">Deseo recibir novedades y ofertas</label>
+        </div>
+
+        <!-- Casilla de verificación: Acepto las condiciones -->
+        <div class="checkbox-label">
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto" style="display:inline;">He leído y acepto las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
